@@ -16,6 +16,18 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    "gatsby-plugin-resolve-src",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
