@@ -6,9 +6,9 @@ import classNames from "classnames"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 
-import infoStyle from "assets/jss/material-kit-react/components/infoStyle.jsx"
+import skillStyle from "assets/jss/material-kit-react/components/skillStyle.jsx"
 
-function InfoArea({ ...props }) {
+function SkillArea({ ...props }) {
   const { classes, title, description, iconColor, vertical } = props
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
@@ -27,16 +27,22 @@ function InfoArea({ ...props }) {
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
         <p className={classes.description}>{description}</p>
+        <ul>
+          <li>Królestwa Północy</li>
+          <li>Scoia'tael</li>
+          <li>Cesarstwo Nilfgaardu</li>
+          <li>Skellige</li>
+        </ul>
       </div>
     </div>
   )
 }
 
-InfoArea.defaultProps = {
+SkillArea.defaultProps = {
   iconColor: "gray",
 }
 
-InfoArea.propTypes = {
+SkillArea.propTypes = {
   classes: PropTypes.object.isRequired,
   icon: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
@@ -53,4 +59,4 @@ InfoArea.propTypes = {
   vertical: PropTypes.bool,
 }
 
-export default withStyles(infoStyle)(InfoArea)
+export default withStyles(skillStyle)(SkillArea)

@@ -16,6 +16,7 @@ import Button from "components/CustomButtons/Button.jsx"
 import Card from "components/Card/Card.jsx"
 import CardBody from "components/Card/CardBody.jsx"
 import CardFooter from "components/Card/CardFooter.jsx"
+import Carousel from "components/Carousel/Carousel.jsx"
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx"
 
@@ -34,8 +35,17 @@ class ThreeDSection extends React.Component {
     return (
       <div className={classes.section}>
         <h2 className={classes.title}>Grafika 3D</h2>
+        <h5 className={classes.description}>
+          W wolnym czasie tworzę grafikę komputerową. Lubię tworzyć ciekawe
+          kompozycje i uczyć się nowych technik. Jest to bardzo kreatywne i
+          rozwijające zajęcie. Swoje projekty tworzę w programie Blender. Moje
+          projekty są dostępne na na{" "}
+          <a href="https://www.cgtrader.com/paho1993">moim profilu CGTrader</a>.
+          Kilka przykładów mojej twórczości można zobaczyć poniżej :
+        </h5>
         <div>
-          <GridContainer>
+          <Carousel />
+          {/* <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -158,7 +168,7 @@ class ThreeDSection extends React.Component {
                 </CardFooter>
               </Card>
             </GridItem>
-          </GridContainer>
+          </GridContainer> */}
         </div>
       </div>
     )
