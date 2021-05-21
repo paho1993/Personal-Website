@@ -10,7 +10,7 @@ import Fingerprint from "@material-ui/icons/Fingerprint"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import InfoArea from "components/InfoArea/InfoArea.jsx"
-import SKillArea from "components/SKillArea/SkillArea.jsx"
+import SkillArea from "components/SkillArea/SkillArea.jsx"
 import team1 from "assets/img/faces/avatar.jpg"
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx"
 
@@ -44,27 +44,41 @@ class SkillsSection extends React.Component {
           <h2 className={classes.title}>Czym się zajmuję</h2>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <SKillArea
+              <SkillArea
                 title="Backend"
                 description="Zajmuję się tworzeniem backendowej storny aplikacji internetowych. Pracuje głównie w językach Python oraz JavaScript. W swojej dotychczasaowej pracy zajmowałem się między innymi: proponowaniem sposobów implementacji nowych rozwiązań oraz utrzymania i wsparcia dla wdrożonych projektów na róznych fazach ukończenia, dynamicznym generowaniem dokumentów czy crawlingiem sieci."
                 icon={Chat}
-                skills={["Node.js", "Django", "REST API", "Security"]}
+                skills={[
+                  "JavaScript",
+                  "Python",
+                  "Node.js",
+                  "Django",
+                  "REST API",
+                  "Security",
+                ]}
                 iconColor="info"
                 vertical
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <SKillArea
+              <SkillArea
                 title="Frontend"
-                description="Tworzę profesjonalne, responsywne interfejsy użytkownika aplikacji webowych. Mam doświadczenie w pracy nad wieloma aplikacjami korporaycjnymi, głównie SPA tworzonych w technologii React."
+                description="Tworzę i projektuję profesjonalne, nowoczesne i responsywne interfejsy użytkownika aplikacji webowych. Mam doświadczenie w pracy nad wieloma aplikacjami korporaycjnymi, głównie SPA tworzonych w technologii React. Posiadam również doświadczenie w tworzeniu stron z systemem CMS opartych o Wordpress'a oraz pozycjonowaniu (SEO) stron internetowych w wyszukiwarce Google."
                 icon={Chat}
-                skills={["React (Hooks)", "TypeScript", "CSS", "HTML"]}
+                skills={[
+                  "React (Hooks)",
+                  "TypeScript",
+                  "CSS",
+                  "HTML",
+                  "SEO",
+                  "Wordpress",
+                ]}
                 iconColor="info"
                 vertical
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <SKillArea
+              <SkillArea
                 title="Bazy danych"
                 description="W mojej pracy cały czas mam do czynienia z bazami danych. Zarówno relacyjnymi jak i nierelacyjnymi. Posiadam wiedzę na temat modelowania baz danych, zarządzania bazami i serverami SQL."
                 icon={Chat}
@@ -79,7 +93,7 @@ class SkillsSection extends React.Component {
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
-              <SKillArea
+              <SkillArea
                 title="DevOps"
                 description="Potrafię tworzyć rozwiązania CI/CD, zajmuję się tworzeniem pipelnów do deployment'u aplikacji. Posiadam również wiedzę na temat konfigurowania i zarządzania rozwiązaniami chmurowymi Microsoft Azure."
                 icon={Chat}

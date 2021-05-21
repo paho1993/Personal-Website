@@ -53,8 +53,8 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Fullstack Developer</h1>
-                  <h3 className={classes.subtitle}>Do zrobienia!</h3>
+                  <h1 className={classes.title}>Maciej Pacholak</h1>
+                  <h3 className={classes.subtitle}>Fullstack Developer</h3>
                 </div>
               </GridItem>
             </GridContainer>

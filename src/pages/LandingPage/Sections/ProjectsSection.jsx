@@ -40,8 +40,9 @@ class ProjectsSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <ProjectArea
                 title="Backend"
-                description="Zajmuję się tworzeniem backendowej storny aplikacji internetowych. Pracuje głównie w języku Python, wykorzystując bibliotekę Django. W swojej dotychczasaowej pracy zajmowałem się między innymi: proponowaniem sposobów implementacji nowych rozwiązań oraz utrzymania i wsparcia dla wdrożonych projektów na róznych fazach ukończenia, dynamicznym generowaniem dokumentów czy crawlingiem sieci."
+                description="Klasyczna witryna statyczna włoskiej pizzerii zawierające menu, wskazówki dojazdu, zdjęcia lokalu oraz sekcje kontatktową. Wykonana w technologii GatsbyJs"
                 image={pzd}
+                buttonMessage="Zobacz stronę"
                 iconColor="info"
                 vertical
               />
@@ -49,52 +50,14 @@ class ProjectsSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <ProjectArea
                 title="Backend"
-                description="Zajmuję się tworzeniem backendowej storny aplikacji internetowych. Pracuje głównie w języku Python, wykorzystując bibliotekę Django. W swojej dotychczasaowej pracy zajmowałem się między innymi: proponowaniem sposobów implementacji nowych rozwiązań oraz utrzymania i wsparcia dla wdrożonych projektów na róznych fazach ukończenia, dynamicznym generowaniem dokumentów czy crawlingiem sieci."
+                description="Strona z modułem CMS wykonana w Wordpress'ie. Opisuje ofertę zorganizowanej podrózy na Kubę prowadzoną przez dwoje doświadczonych podróżników."
                 image={mykuba}
+                buttonMessage="Zobacz stronę"
                 iconColor="info"
                 vertical
               />
             </GridItem>
           </GridContainer>
-          {/* <Card>fasfasfasf</Card> */}
-          {/* <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <Card style={{ width: "20rem" }}>
-                <img
-                  style={{ height: "180px", width: "100%", display: "block" }}
-                  className={classes.imgCardTop}
-                  src={team2}
-                  alt="Card-img-cap"
-                />
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Card title</h4>
-                  <p>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <Button color="primary">Do something</Button>
-                </CardBody>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <Card style={{ width: "20rem" }}>
-                <img
-                  style={{ height: "180px", width: "100%", display: "block" }}
-                  className={classes.imgCardTop}
-                  src={team2}
-                  alt="Card-img-cap"
-                />
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Card title</h4>
-                  <p>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <Button color="primary">Do something</Button>
-                </CardBody>
-              </Card>
-            </GridItem>
-          </GridContainer> */}
         </div>
       </div>
     )

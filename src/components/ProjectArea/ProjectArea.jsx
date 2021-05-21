@@ -13,7 +13,15 @@ import projectStyle from "assets/jss/material-kit-react/components/projectStyle.
 import pzd from "assets/img/pzd_card.png"
 
 function ProjectArea({ ...props }) {
-  const { classes, title, description, iconColor, vertical, image } = props
+  const {
+    classes,
+    title,
+    description,
+    buttonMessage,
+    iconColor,
+    vertical,
+    image,
+  } = props
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
     [classes[iconColor]]: true,
@@ -33,12 +41,8 @@ function ProjectArea({ ...props }) {
           alt="Card-img-cap"
         />
         <CardBody>
-          <h4 className={classes.cardTitle}>Card title</h4>
-          <p>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <Button color="primary">Do something</Button>
+          <p>{description}</p>
+          <Button color="primary">{buttonMessage}</Button>
         </CardBody>
       </Card>
     </div>
@@ -51,8 +55,8 @@ ProjectArea.defaultProps = {
 
 ProjectArea.propTypes = {
   classes: PropTypes.object.isRequired,
-  // image: PropTypes.img.isRequired,
   title: PropTypes.string.isRequired,
+  buttonMessage: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   iconColor: PropTypes.oneOf([
     "primary",
