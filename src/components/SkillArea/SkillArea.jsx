@@ -9,7 +9,7 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import skillStyle from "assets/jss/material-kit-react/components/skillStyle.jsx"
 
 function SkillArea({ ...props }) {
-  const { classes, title, description, iconColor, vertical } = props
+  const { classes, title, description, skills, iconColor, vertical } = props
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
     [classes[iconColor]]: true,
@@ -28,10 +28,9 @@ function SkillArea({ ...props }) {
         <h4 className={classes.title}>{title}</h4>
         <p className={classes.description}>{description}</p>
         <ul>
-          <li>Królestwa Północy</li>
-          <li>Scoia'tael</li>
-          <li>Cesarstwo Nilfgaardu</li>
-          <li>Skellige</li>
+          {skills.map(skill => (
+            <li>{skill}</li>
+          ))}
         </ul>
       </div>
     </div>
@@ -47,6 +46,7 @@ SkillArea.propTypes = {
   icon: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  skills: PropTypes.array.isRequired,
   iconColor: PropTypes.oneOf([
     "primary",
     "warning",

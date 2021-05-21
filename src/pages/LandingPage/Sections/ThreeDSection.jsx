@@ -36,10 +36,10 @@ class ThreeDSection extends React.Component {
       <div className={classes.section}>
         <h2 className={classes.title}>Grafika 3D</h2>
         <h5 className={classes.description}>
-          W wolnym czasie tworzę grafikę komputerową. Lubię tworzyć ciekawe
+          Moim hobby jest grafika komputerowa 3D. Lubię tworzyć ciekawe
           kompozycje i uczyć się nowych technik. Jest to bardzo kreatywne i
           rozwijające zajęcie. Swoje projekty tworzę w programie Blender. Moje
-          projekty są dostępne na na{" "}
+          projekty są dostępne na{" "}
           <a href="https://www.cgtrader.com/paho1993">moim profilu CGTrader</a>.
           Kilka przykładów mojej twórczości można zobaczyć poniżej :
         </h5>

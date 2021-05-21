@@ -46,8 +46,9 @@ class SkillsSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <SKillArea
                 title="Backend"
-                description="Zajmuję się tworzeniem backendowej storny aplikacji internetowych. Pracuje głównie w języku Python, wykorzystując bibliotekę Django. W swojej dotychczasaowej pracy zajmowałem się między innymi: proponowaniem sposobów implementacji nowych rozwiązań oraz utrzymania i wsparcia dla wdrożonych projektów na róznych fazach ukończenia, dynamicznym generowaniem dokumentów czy crawlingiem sieci."
+                description="Zajmuję się tworzeniem backendowej storny aplikacji internetowych. Pracuje głównie w językach Python oraz JavaScript. W swojej dotychczasaowej pracy zajmowałem się między innymi: proponowaniem sposobów implementacji nowych rozwiązań oraz utrzymania i wsparcia dla wdrożonych projektów na róznych fazach ukończenia, dynamicznym generowaniem dokumentów czy crawlingiem sieci."
                 icon={Chat}
+                skills={["Node.js", "Django", "REST API", "Security"]}
                 iconColor="info"
                 vertical
               />
@@ -55,8 +56,9 @@ class SkillsSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <SKillArea
                 title="Frontend"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="Tworzę profesjonalne, responsywne interfejsy użytkownika aplikacji webowych. Mam doświadczenie w pracy nad wieloma aplikacjami korporaycjnymi, głównie SPA tworzonych w technologii React."
                 icon={Chat}
+                skills={["React (Hooks)", "TypeScript", "CSS", "HTML"]}
                 iconColor="info"
                 vertical
               />
@@ -64,8 +66,14 @@ class SkillsSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <SKillArea
                 title="Bazy danych"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="W mojej pracy cały czas mam do czynienia z bazami danych. Zarówno relacyjnymi jak i nierelacyjnymi. Posiadam wiedzę na temat modelowania baz danych, zarządzania bazami i serverami SQL."
                 icon={Chat}
+                skills={[
+                  "SQL Server",
+                  "MongoDB",
+                  "PostgreSQL",
+                  "Modelowanie danych",
+                ]}
                 iconColor="info"
                 vertical
               />
@@ -73,8 +81,9 @@ class SkillsSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <SKillArea
                 title="DevOps"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="Potrafię tworzyć rozwiązania CI/CD, zajmuję się tworzeniem pipelnów do deployment'u aplikacji. Posiadam również wiedzę na temat konfigurowania i zarządzania rozwiązaniami chmurowymi Microsoft Azure."
                 icon={Chat}
+                skills={["CI/CD", "Azure Cloud", "Octopus", "SonarQube"]}
                 iconColor="info"
                 vertical
               />
